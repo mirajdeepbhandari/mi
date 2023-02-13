@@ -1,0 +1,346 @@
+/* 
+  @font-face rule for smallcursive font 
+  This rule defines the smallcursive font family and points to the smallcursive.ttf file 
+  for the font's source
+*/
+@font-face {
+  font-family: smallcursive;
+  src: url("../fonts/smallcursive.ttf");
+}
+
+/* 
+  @font-face rule for bigbold font 
+  This rule defines the bigbold font family and points to the bigbold.ttf file 
+  for the font's source
+*/
+@font-face {
+  font-family: bigbold;
+  src: url("../fonts/bigbold.ttf");
+}
+
+/* 
+  @font-face rule for slogan font 
+  This rule defines the slogan font family and points to the slogan.ttf file 
+  for the font's source
+*/
+@font-face {
+  font-family: slogan;
+  src: url("../fonts/slogan.ttf");
+}
+
+/* 
+  Style for all elements 
+  This style removes the default margin and padding, and makes sure that the 
+  width and height of an element includes its border and padding (using the border-box value) 
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+  Style for .link element 
+  This style positions the element relatively, adds a left margin of 12%, 
+  adds a bottom margin of 2.5rem, sets the width to 45%, 
+  sets the height to 2.6125rem, sets the font family to smallcursive, 
+  sets the font size to 1.4375rem, adds letter spacing of 0.15625rem, 
+  and positions the element 20px from the top 
+*/
+.link {
+  position: relative;
+  margin-left: 12%;
+  margin-bottom: 40px;
+  width: 45%;
+  height: 41.8px;
+  font-family: smallcursive;
+  font-size: 23px;
+  letter-spacing: 2.5px;
+  top: 20px;
+}
+
+/* 
+  Style for th elements within .link element 
+  This style adds padding of 0.625rem to th elements 
+*/
+.link th {
+  padding: 10px;
+}
+
+/* 
+  Style for a elements within th elements within .link element 
+  This style removes the default text decoration for a elements, 
+  sets the text color to white, and sets the font style to smallcursive 
+*/
+.link th a {
+  text-decoration: none;
+  color: #ffffff;
+  font-style: smallcursive;
+}
+
+/* 
+  Style for a elements within th elements within .link element when hovered over 
+  This style adds an overline decoration to the text, sets the decoration color to rgb(41, 244, 98), 
+  and sets the decoration thickness to 0.15625rem 
+*/
+
+.link th a:hover {
+  text-decoration-line: overline;
+  text-decoration-color: rgb(41, 244, 98);
+  text-decoration-thickness: 0.15625rem;
+}
+
+/*css for visited links*/
+.link th a:visited {
+  text-decoration-color: rgb(211, 25, 53);
+}
+
+/*css for link which we click for short period of time*/
+.link th a:active {
+  text-decoration-color: rgb(152, 25, 211);
+}
+
+/* 
+  Style for .sbutton element 
+  This style removes the default text decoration for the element, 
+  positions it absolutely, sets the font size to 1.25rem, adds padding of 0.625rem, 
+  sets the border radius to 1.25rem, sets the text color to white, 
+  adds padding to the left and right of 0.9375rem, 
+  sets the font family to consolas, adds letter spacing of 0.015625rem, 
+  sets the font weight to bolder, and positions the element 3% from the top 
+*/
+.sbutton {
+  text-decoration: none;
+  position: absolute;
+
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+
+  color: #ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: consolas;
+  letter-spacing: 0.25px;
+  font-weight: bolder;
+  top: 3%;
+}
+
+/* 
+  Style for #signin_button element when hovered over 
+  This style sets the font weight to bolder, sets the text color to white, 
+  sets the background color to rgb(249, 11, 51), and adds a box shadow effect 
+*/
+#signin_button:hover {
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  background: rgb(249, 11, 51);
+  box-shadow: 0 0 5px rgb(249, 11, 51), 0 0 25px rgb(249, 11, 51),
+    0 0 50px rgb(249, 11, 51), 0 0 200px rgb(249, 11, 51);
+}
+
+/* 
+  Style for #signup_button element when hovered over 
+  This style sets the font weight to bolder, sets the text color to white, 
+  sets the background color to rgb(11, 249, 74), and adds a box shadow effect 
+*/
+#signup_button:hover {
+  font-weight: bolder;
+  color: #ffffff;
+  background: rgb(11, 249, 74);
+  box-shadow: 0 0 5px rgb(11, 249, 74), 0 0 25px rgb(11, 249, 74),
+    0 0 50px rgb(11, 249, 74), 0 0 200px rgb(11, 249, 74);
+}
+
+/* 
+  Style for #signin_button element 
+  This style positions the element 23% from the right, sets the background color to rgb(249, 11, 51), 
+  and adds a box shadow effect 
+*/
+#signin_button {
+  right: 23%;
+
+  background: rgb(249, 11, 51);
+  box-shadow: 0 0 5px rgb(249, 11, 51);
+}
+
+/* 
+  Style for #signup_button element 
+  This style positions the element 12% from the right, sets the background color to rgb(25, 240, 83), 
+  and adds a box shadow effect 
+*/
+#signup_button {
+  right: 12%;
+
+  background: rgb(25, 240, 83);
+  box-shadow: 0 0 5px rgb(20, 109, 100);
+}
+
+/* 
+  Style for body element 
+  This style sets the font family to poppins, the background color to a dark blue, 
+  and sets the line height to 1 
+*/
+body {
+  font-family: "poppins";
+  background-color: rgb(0, 43, 63);
+  line-height: 1;
+}
+
+/* 
+  Style for a elements 
+  This style removes the default text decoration for a elements 
+*/
+a {
+  text-decoration: none;
+}
+
+/* 
+  Style for #container element 
+  This style positions the element 100px from the top of the screen, 
+  centers it horizontally, sets the max width to 430px, 
+  and adds padding of 20px on all sides 
+*/
+#container {
+  margin: 30px auto;
+  position: relative;
+  top: 100px;
+  max-width: 430px;
+  padding: 20px;
+}
+
+/* 
+  Style for #container_signup element 
+  This style positions the element 9px from the top of the screen, 
+  centers it horizontally, sets the max width to 430px, 
+  adds padding of 20px on all sides, 
+  and sets the height to 632px 
+*/
+#container_signup {
+  margin: 30px auto;
+  position: relative;
+  top: -9px;
+  max-width: 430px;
+  padding: 20px;
+  height: 632px;
+}
+
+/* 
+  Style for .form-wrap element 
+  This style sets the background color to white, adds padding of 15px 25px, 
+  sets the text color to a dark grey, adds a top border of 4px with a color of #49c1a2, 
+  and adds a border radius of 5px 
+*/
+.form-wrap {
+  background-color: #fff;
+  padding: 15px 25px;
+  color: #333;
+  border-top: 4px solid #49c1a2;
+  border-radius: 05px;
+}
+
+/* 
+  Style for h1 and p elements within .form-wrap element 
+  This style centers the text within h1 and p elements 
+*/
+.form-wrap h1,
+.form-wrap p {
+  text-align: center;
+}
+
+/* 
+  Style for .form-group elements within .form-wrap element 
+  This style adds a top margin of 15px to .form-group elements 
+*/
+.form-wrap .form-group {
+  margin-top: 15px;
+}
+
+/* 
+  Style for label elements within .form-group elements within .form-wrap element 
+  This style displays label elements as block elements and sets the text color to a light grey 
+*/
+.form-wrap .form-group label {
+  display: block;
+  color: #666;
+}
+
+/* 
+  Style for input elements within .form-group elements within .form-wrap element 
+  This style sets the width to 100%, adds padding of 10px, 
+  adds a 1px solid border of color #ddd, and adds a border radius of 5px 
+*/
+.form-wrap .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: #ddd 1px solid;
+  border-radius: 5px;
+}
+
+/* 
+  Style for button elements within .form-wrap element 
+  This style displays the button as a block element, sets the width to 100%, 
+  adds padding of 10px, adds a top margin of 20px, 
+  sets the background color to #49c1a2 and the text color to white, 
+  sets the cursor to a pointer, adds a 1px solid border of color #49c1a2, 
+  sets the font family to poppins, sets the font size to 15px, 
+  and adds a transition duration of 1s 
+*/
+.form-wrap button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #49c1a2;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #49c1a2;
+  font-family: "poppins";
+  font-size: 15px;
+  transition: 1s;
+}
+
+/* 
+  Style for button elements within .form-wrap element when hovered over 
+  This style sets the background color to #37a08e and adds a transition duration of 1s 
+*/
+.form-wrap button:hover {
+  background-color: #37a08e;
+  transition: 1s;
+}
+
+/* 
+  Style for .form-wrap .bottom-text element 
+  This style sets the font size to 13px and adds a top margin of 20px 
+*/
+.form-wrap .bottom-text {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+/* 
+  Style for footer element 
+  This style centers the text within the footer element and adds a top margin of 10px 
+*/
+footer {
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+}
+
+/* 
+  Style for a elements within footer element 
+  This style sets the text color to #49c1a2 
+*/
+footer a {
+  color: #49c1a2;
+}
+
+/* 
+  Style for #box element 
+  This style sets the width to 100% and the height to 40px 
+*/
+#box {
+  width: 100%;
+  height: 40px;
+}
